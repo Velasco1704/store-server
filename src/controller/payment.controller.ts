@@ -262,8 +262,12 @@ export const captureOrder = async (req: Request, res: Response) => {
             })
             .then((resultOrder) =>
               resultOrder
-                ? res.redirect("http://localhost:5173/payment-success")
-                : res.redirect("http://localhost:5173/payment-reject")
+                ? res.redirect(
+                    "https://my-store-client.netlify.app/payment-success"
+                  )
+                : res.redirect(
+                    "https://my-store-client.netlify.app/payment-reject"
+                  )
             )
             .catch((error) => console.log(error));
         } else {
