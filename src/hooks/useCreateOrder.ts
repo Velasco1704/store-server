@@ -19,7 +19,7 @@ export const useCreateOrder = async (amount: string): Promise<any | null> => {
         landing_page: "NO_PREFERENCE",
         user_action: "PAY_NOW",
         return_url: "http://localhost:3003/capture-order",
-        cancel_url: "https://my-store-client.netlify.app/payment-canceled",
+        cancel_url: "https://my-store-client.netlify.app",
       },
     };
 
